@@ -1,0 +1,163 @@
+#app {
+  
+    width: 800px;
+    height:800px;
+  margin-top: 100px;
+  justify-content: center;
+  margin-bottom: 200px;
+    position: relative;
+   
+  }
+  .mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor preta semi-transparente */
+    display: none; /* Inicialmente invisível */
+    z-index: 9998; /* Z-index abaixo da div ".display" */
+}
+/* Estilos normais das imagens das cadeiras */
+.cadeira-img {
+  transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+
+/* Estilos para quando a imagem está grande */
+.cadeira-img.grande {
+  transform: scale(6); /* Aumenta o tamanho da imagem */
+}
+
+.display {
+  width: 1200px; 
+  height: 950px;
+  justify-content: center;
+  display: none;
+  border-radius: 35px;
+  padding: 50px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
+  animation: popOut 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+.display.show {
+  padding: 80px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.display.show button {
+  padding: 0px;
+  height: 150px;
+  box-shadow: 0px 0px 30px #b31dba;
+  width: 150px;
+  border-radius: 50%;
+  border: 11px solid rgb(255 0 215);
+  background-color: rgb(255 0 215);
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+.display.show button:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+.display.show button i {
+  color: #fff;
+  font-size: 70px;
+}
+.display.show {
+  font-size: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.display.show img {
+  height: 310px;
+  align-self: center; /* Alinha a imagem à parte superior */
+}
+
+.display.show div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.display.show .cadeira-gamer-result {
+  display: inline;
+  /* Outros estilos específicos para a div result quando o prêmio for Cadeira Gamer */
+}
+
+
+@keyframes popOut {
+    0% {
+        transform: translate(-50%, -50%) scale(0.5); /* Começa pequeno */
+        opacity: 0; /* Inicia transparente */
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1); /* Termina em tamanho normal */
+        opacity: 1; /* Termina totalmente visível */
+    }
+}
+
+
+
+  .marker {
+    position: absolute;
+    width: 150px;
+    left: 320px;
+    top: 45px;
+    z-index: 2;
+  }
+  
+  .wheel {
+    margin-top: 120px;
+    margin-left: -315px;
+    width: 1400px;
+    height: 1400px;
+  }
+
+ 
+  
+  .button {
+    display: block;
+    width: 250px;
+    margin: 40px auto;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    opacity: 0.8;
+  }
+  
+  .blur {
+    animation: blur 10s;
+  }
+  .newrow{
+    display: flex;
+    justify-content: center;
+  }
+  
+  @keyframes blur {
+    0% {
+      filter: blur(1.5px);
+    }
+    80% {
+      filter: blur(1.5px);
+    }
+    100% {
+      filter: blur(0px);
+    }
+  }
+  

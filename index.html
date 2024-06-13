@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="premios.css">
+    <link rel="stylesheet" href="botaoback.css">
+    <link rel="stylesheet" href="newonde.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COOLER MASTER - DIA1</title>
+    <style>
+ .premios {
+    background-color: #fff;
+    width: 100%;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    padding-top: 50px;
+    box-sizing: border-box;
+    animation: shadowLoop 4s linear infinite alternate;
+    padding-bottom: 50px;
+    position: fixed;
+    bottom: 0;
+}
+
+        @keyframes shadowLoop {
+
+            0%,
+            100% {
+                box-shadow: 0px 0px 100px #00e1ff;
+                /* Definindo a sombra inicial */
+            }
+
+            50% {
+                box-shadow: 0px 0px 100px #ff008b;
+                /* Definindo a sombra final */
+            }
+        }
+
+        .ggdigital {
+            justify-content: center;
+            display: grid;
+        }
+
+        .ggdigital img {
+            width: 100px;
+        }
+
+        .textgg {
+            display: flex;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .containerpremios {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+
+        .containerpremios .boxpremios {
+            width: 450px;
+            margin: 15px;
+            height: 100px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+        .mainalign {
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .imglogo {
+            /* margin-left: 100px; */
+            margin-bottom: -20px;
+            margin-top: 85px;
+            display: flex;
+            margin-left: 100px;
+            margin-right: 100px;
+            position: relative;
+            justify-content: space-between;
+        }
+
+        .imglogo img {
+            height: 120px;
+        }
+
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            outline: none;
+        }
+
+        body {
+            display: inline;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            background: #1e1e28;
+            background-size: cover;
+            font-family: monospace;
+
+        }
+
+        .mainbox {
+            border-radius: 10px;
+            background: url(assets/back.png);
+            position: relative;
+            width: 500px;
+            margin-bottom: 80px;
+            height: 500px;
+        }
+
+        .mainbox::after {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 100%;
+    background: url(assets/marker.png) no-repeat;
+    background-size: 100px;
+    right: 145px;
+    top: -15%;
+    transform: translate(-50%);
+}
+
+
+        .box {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            border-radius: 50%;
+            border: 10px solid #24242b;
+            overflow: hidden;
+            transition: all ease 5s;
+        }
+
+        span {
+            width: 50%;
+            height: 50%;
+            display: inline-block;
+            position: absolute;
+        }
+
+        .span1 {
+            clip-path: polygon(0 92%, 100% 50%, 0 8%);
+            background-color: coral;
+            top: 120px;
+            left: 0;
+        }
+
+        .span2 {
+            clip-path: polygon(100% 92%, 0 50%, 100% 8%);
+            background-color: rgb(255, 223, 80);
+            top: 120px;
+            right: 0;
+        }
+
+        .span3 {
+            clip-path: polygon(50% 0%, 8% 100%, 92% 100%);
+            background-color: rgb(0, 161, 100);
+            bottom: 0;
+            left: 120px;
+        }
+
+        .span4 {
+            clip-path: polygon(50% 100%, 92% 0, 8% 0);
+            background-color: rgb(255, 80, 246);
+            left: 120px;
+            top: 0;
+        }
+
+        .box2 {
+            width: 100%;
+            height: 100%;
+            transform: rotate(-135deg);
+        }
+
+        span b {
+            width: 65px;
+            height: 65px;
+            line-height: 65px;
+            border-radius: 50%;
+            font-size: 26px;
+            text-align: center;
+            background-color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: inset 0 3px 3px 0px #717171;
+        }
+.ggtop{
+    height: 520px;
+}
+        .spin {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 4px solid #ffffff;
+            background-color: #1e1e28;
+            color: #fff;
+            box-shadow: 0px 5px 50px #ffffff;
+            font-weight: bold;
+            font-size: 20px;
+            cursor: pointer;
+            transition: 0.2s;
+
+
+        }
+
+        .spin:active {
+            width: 90px;
+            height: 90px;
+            font-size: 19px;
+            transition: 0.2s;
+        }
+        #backcooler {
+    position: absolute;
+    top: -50px;
+    /* left: 0; */
+    height: 1990px;
+    z-index: -1;
+}
+.aligncooler{
+    justify-content: center;
+    display: flex;
+}
+.newrow .button {
+    position: relative;
+    left: 25%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 120px;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;  
+    line-height: 110px;
+    border-radius: 20px;
+    border: 7px solid #fff;
+    transition: 0.2s;
+    cursor: pointer;
+    box-shadow: 10px 10px 60px #000;
+    animation: colorChange 3s infinite alternate; /* Adiciona animação de mudança de cor ao fundo */
+}
+
+
+
+.newrow .button:hover {
+    width: 430px;
+    transition: 0.2s;
+    left: 26%;
+    font-size: 60px;
+    height: 125px;
+ 
+}
+
+
+
+
+.btn {
+ padding: 50px;
+ font-size: 60px;
+ border: none;
+ background: #6285f8;
+ color: white;
+ cursor: pointer;
+ left: 15%;
+ top: 30%;
+ position: relative;
+ z-index: 1;
+}
+
+.btn:hover {
+ color: rgb(255, 255, 255);
+}
+
+.btn::before,.btn::after {
+ content: "";
+ position: absolute;
+ top: 0%;
+ left: 0%;
+ width: 100%;
+ height: 100%;
+ background: rgba(128, 128, 128, 0.096);
+ backdrop-filter: blur(10px);
+ z-index: -1;
+ transition: all 0.4s;
+}
+
+.btn::after {
+ z-index: -2;
+ transition: all 0.4s;
+}
+
+.btn:hover::before {
+ background: rgb(0, 0, 0, 0.315);
+ border-radius: 10px;
+}
+
+.btn:hover::after {
+ background: linear-gradient(to right, #cb6ce6, #38b6ff);
+ border-radius: 10px;
+ transform: scale(1.07, 1.2) rotateX(180deg);
+}
+.classe{
+    width: 90px;
+}
+.back_cooler {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            background-image: url('assets/back_cooler.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+
+</head>
+
+<body>
+     <!--<div class="back_cooler"></div>--> <div class="resultado" id="resultado"></div>
+    
+    <div class="resultado" id="resultado"></div>
+    <div class="colors"></div>
+    <div class="imglogo"><img src="assets/logo.png" alt="">
+        <img src="assets/ggdigitaltop.png" alt="" id="ggtop">
+    </div>
+  
+    <div class="newrow">
+    <div id="app">
+        <img class="marker" src="marker.png" />
+        <div class="aligncooler">
+            <video src="assets/neon_cooler.mp4" autoplay loop muted id="backcooler"></video>
+        <!--<img src="coolerback.png" alt="" id="backcooler">--></div>
+        <img class="wheel" src="pás-primeiro-dia.png" />
+        <button class="btn"  onclick="startButton.click()"> GIRE A ROLETA
+        </button>
+        <div class="display">
+            <div class="imgdisplay">
+                <img src="assets/logo.png" alt="">
+            </div>
+            <button>Meu Botão</button>
+        </div>
+        <div class="mask"></div>
+
+      </div>
+    </div>
+ 
+    <script>
+    (function() {
+        const wheel = document.querySelector('.wheel');
+        const startButton = document.querySelector('.btn');
+        const display = document.querySelector('.display');
+        const marker = document.querySelector('.marker');
+      
+        let deg = 0;
+        let zoneSize = 36; // Cada segmento da roda
+        let clicks = 0;
+        let mouseReleasedCount = 0;
+        let copoReleasedCount = 0; // Contador de liberação do copo
+        let camisetaReleasedCount = 0; // Contador de liberação da camiseta
+        let coolerReleasedCount = 0; // Contador de liberação do Cooler
+        let monitorReleasedCount = 0; // Contador de liberação do Monitor
+        let cadeiraReleasedCount = 0; // Contador de liberação da Cadeira
+        let gabineteReleasedCount = 0; // Contador de liberação do Gabinete
+
+        // Prêmios definidos por segmentos
+        const symbolSegments = {
+          1: "#1\nParabéns! Você ganhou um Monitor GA27!",
+          2: "#2\nParabéns! Você ganhou uma Camiseta Exclusiva Cooler Master!",
+          3: "#3\nParabéns! Você ganhou um ML240MLCore Preto",
+          4: "#4\nParabéns! Você ganhou uma Cadeira Gamer!",
+          5: "#5\nPoxa! Não foi dessa vez!",
+          6: "#6\nParabéns! Você ganhou um Gabinete TD500 RYU",
+          7: "#7\nParabéns! Você ganhou um Mouse CM110",
+          8: "#8\nParabéns! Você ganhou um Cordão Exclusivo Cooler Master",
+          9: "#9\nParabéns! Você ganhou um Copo Exclusivo Cooler Master",
+          10: "#10\nParabéns! Você ganhou um Bottom Exclusivo!"
+        };
+      
+        const bottomImages = [
+          'assets/bottom (1).png',
+          'assets/bottom (2).png',
+          'assets/bottom (3).png',
+          'assets/bottom (4).png',
+          'assets/bottom (5).png'
+        ];
+      
+        startButton.addEventListener('click', () => {
+          // Disable button during spin
+          startButton.style.pointerEvents = 'none';
+      
+          // Calculate a new rotation angle based on the number of clicks
+          const markerAngle = -Math.atan2(marker.offsetTop, marker.offsetLeft) * (180 / Math.PI);
+          let snailAngle;
+      
+          function getRandomInt(max) {
+            return Math.floor(Math.random() * max);
+          }
+      
+         
+    function shouldReleasePrize(probability) {
+      return getRandomInt(100) < probability; // Retorna verdadeiro baseado na probabilidade passada
+    }
+      
+       
+    console.log("Clicks:", clicks);
+    console.log("Marker Angle:", markerAngle); // Adicionado para depuração
+
+    switch (clicks) {
+         
+
+
+
+
+
+
+    default:
+    if (clicks <= 1000) {
+  // Verificar se podemos liberar "Mouse", "Camiseta", "Copo", "Cooler", "Monitor", "Cadeira" ou "Gabinete" e se o aleatório permite
+  if (mouseReleasedCount < 2 && shouldReleasePrize(10)) { // 10% chance para liberar "Mouse"
+    snailAngle = 252 + markerAngle; // Mouse
+    mouseReleasedCount++;
+  } else if (camisetaReleasedCount < 2 && shouldReleasePrize(2)) { // 2% chance para liberar "Camiseta"
+    snailAngle = 72 + markerAngle; // Camiseta
+    camisetaReleasedCount++;
+  } else if (copoReleasedCount < 10 && shouldReleasePrize(5)) { // 5% chance para liberar "Copo"
+    snailAngle = 324 + markerAngle; // Copo
+    copoReleasedCount++;
+  } else if (coolerReleasedCount < 1 && shouldReleasePrize(0.25)) { // 0,25% chance para liberar "Cooler"
+    snailAngle = 108 + markerAngle; // Cooler
+    coolerReleasedCount++;
+  } else if (monitorReleasedCount < 1 && shouldReleasePrize(0.05)) { // 0.05% chance para liberar "Monitor"
+    snailAngle = 36 + markerAngle; // Monitor
+    monitorReleasedCount++;
+  } else if (cadeiraReleasedCount < 1 && shouldReleasePrize(0.05)) { // 0,05% chance para liberar "Cadeira"
+    snailAngle = 144 + markerAngle; // Cadeira
+    cadeiraReleasedCount++;
+  } else if (gabineteReleasedCount < 1 && shouldReleasePrize(0.05)) { // 0,05% chance para liberar "Gabinete"
+    snailAngle = 216 + markerAngle; // Gabinete
+    gabineteReleasedCount++;
+  } else {
+    // Intercalar entre bottom, nothing e Cordão
+    if (clicks % 3 === 0) {
+      snailAngle = 360 + markerAngle; // bottom
+    } else if (clicks % 3 === 1) {
+      snailAngle = 180 + markerAngle; // nothing
+    } else {
+      snailAngle = 288 + markerAngle; // Cordão
+    }
+  }
+} else {
+  snailAngle = 180 + markerAngle; // Nothing
+}
+
+      break;
+  }
+
+  console.log("Snail Angle:", snailAngle); // Adicionado para depuração
+  console.log("Mouse Released Count:", mouseReleasedCount); // Adicionado para depuração
+  console.log("Camiseta Released Count:", camisetaReleasedCount); // Adicionado para depuração
+  console.log("Copo Released Count:", copoReleasedCount); // Adicionado para depuração
+  console.log("Cooler Released Count:", coolerReleasedCount); // Adicionado para depuração
+  console.log("Monitor Released Count:", monitorReleasedCount); // Adicionado para depuração
+  console.log("Cadeira Released Count:", cadeiraReleasedCount); // Adicionado para depuração
+  console.log("Gabinete Released Count:", gabineteReleasedCount); // Adicionado para depuração
+
+      const snailSegment = Math.floor(snailAngle / zoneSize) + 1;
+      deg = 360 * 10 + (snailSegment - 1) * zoneSize + Math.random() * zoneSize;
+
+      // Set the transition on the wheel
+      wheel.style.transition = 'transform 5s ease-in-out'; // Aumenta a duração para 10 segundos
+      // Rotate the wheel
+      wheel.style.transform = `rotate(${deg}deg)`;
+      // Apply the blur
+      wheel.classList.add('blur');
+
+      // Increment click counter
+      clicks++;
+    });
+
+    wheel.addEventListener('transitionend', () => {
+      wheel.classList.remove('blur');
+      startButton.style.pointerEvents = 'auto';
+
+      const actualDeg = deg % 360;
+      wheel.style.transition = 'none';
+      wheel.style.transform = `rotate(${actualDeg}deg)`;
+
+      const result = symbolSegments[Math.ceil(actualDeg / zoneSize)];
+
+      // Limpar conteúdo anterior da div ".display"
+      display.innerHTML = '';
+
+      // Adicionar o botão e a imagem à div "display"
+      const button = document.createElement('button');
+      button.innerHTML = '<i class="bi bi-caret-right-fill"></i>';
+
+      const img = document.createElement('img');
+      img.src = 'image.png';
+      img.alt = '';
+      img.style.height = '210px'; // Você pode ajustar o valor conforme necessário
+      img.style.marginBottom = '20px'; // Você pode ajustar o valor conforme necessário
+
+      const resultDiv = document.createElement('div');
+      resultDiv.textContent = result;
+
+      if (result === "#5\nPoxa! Não foi dessa vez!") {
+        const img = document.createElement('img');
+        img.src = 'assets/sad.png';
+        resultDiv.style.display = 'flex';
+        resultDiv.style.justifyContent = 'center';
+        resultDiv.style.alignItems = 'center';
+        resultDiv.appendChild(img);
+      } else if (result.includes("Copo Exclusivo Cooler Master")) {
+        const coposImg = document.createElement('img');
+        coposImg.src = 'assets/copo.png';
+        resultDiv.appendChild(coposImg);
+      } else if (result.includes("ML240MLCore Preto")) {
+        const coolerImg = document.createElement('img');
+        coolerImg.src = 'assets/cooler.jpg';
+        resultDiv.appendChild(coolerImg);
+      } else if (result.includes("Monitor GA27")) {
+        const monitorImg = document.createElement('img');
+        monitorImg.src = 'assets/monitor.png';
+        resultDiv.appendChild(monitorImg);
+      } else if (result.includes("Camiseta Exclusiva Cooler Master")) {
+        const camisetaImg = document.createElement('img');
+        camisetaImg.src = 'assets/camiseta.png';
+        resultDiv.appendChild(camisetaImg);
+      } else if (result.includes("Cadeira Gamer!")) {
+        const cadeirasImg = document.createElement('img');
+        cadeirasImg.src = 'assets/cadeiras (1).png';
+        resultDiv.appendChild(cadeirasImg);
+      } else if (result.includes("Mouse CM110")) {
+        const mouseImg = document.createElement('img');
+        mouseImg.src = 'assets/mouse.png';
+        resultDiv.appendChild(mouseImg);
+      } else if (result.includes("Gabinete TD500 RYU")) {
+        const ryuImg = document.createElement('img');
+        ryuImg.src = 'assets/monitores (1).png';
+        resultDiv.appendChild(ryuImg);
+      } else if (result.includes("Cordão Exclusivo Cooler Master")) {
+        const cordaoImg = document.createElement('img');
+        cordaoImg.src = 'assets/cordao.png';
+        resultDiv.appendChild(cordaoImg);
+      } else if (result.includes("Bottom Exclusivo")) {
+        const bottomImg = document.createElement('img');
+        bottomImg.src = bottomImages[clicks % bottomImages.length]; // Seleciona uma das 5 variações de imagens
+        resultDiv.appendChild(bottomImg);
+      }
+
+      // Adicionar elementos à div ".display"
+      display.appendChild(img); // Coloque a imagem primeiro
+      display.appendChild(resultDiv);
+      display.appendChild(button);
+
+      // Exibir a div "display" adicionando a classe "show"
+      display.classList.add('show');
+      // Mostrar a máscara
+      document.querySelector('.mask').style.display = 'block';
+
+      // Ocultar a div ".display" quando o botão for clicado
+      button.addEventListener('click', () => {
+        display.classList.remove('show');
+        document.querySelector('.mask').style.display = 'none';
+      });
+    });
+  })();
+</script>
+
+      
+        
+
+    
+    <div class="premios">
+
+       
+
+        <div class="containerpremios">
+            <div class="boxpremios">
+                <div class="card">
+                    <p class="title1">Cadeiras </p>
+
+                    <p class="title2">5 modelos de Cadeiras para Sorteio!</b></p>
+                    <img src="assets/cadeiras (1).png" alt="" style="height: 130px;">
+                    <defs>
+                        <linearGradient id="paint0_linear_501_142" x1="0" y1="0" x2="96.1684" y2="87.6201"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#BF66FF"></stop>
+                            <stop offset="0.510417" stop-color="#6248FF"></stop>
+                            <stop offset="1" stop-color="#00DDEB"></stop>
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_501_142" x1="0" y1="0" x2="96.1684" y2="87.6201"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#BF66FF"></stop>
+                            <stop offset="0.510417" stop-color="#6248FF"></stop>
+                            <stop offset="1" stop-color="#00DDEB"></stop>
+                        </linearGradient>
+                        <linearGradient id="paint2_linear_501_142" x1="0" y1="0" x2="96.1684" y2="87.6201"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#BF66FF"></stop>
+                            <stop offset="0.510417" stop-color="#6248FF"></stop>
+                            <stop offset="1" stop-color="#00DDEB"></stop>
+                        </linearGradient>
+                    </defs>
+                    </svg>
+                </div>
+
+            </div>
+            <div class="boxpremios">
+                <div class="card">
+                    <p class="title1">Cooler </p>
+
+                    <p class="title2">ML240MLCore Preto</p>
+                    <img src="assets/cooler.png" alt="" style="position: absolute;
+                    top: 20px;
+                    right: 10px;
+                    width: 180px;
+                    left: -19px;">
+                    <defs>
+                        <linearGradient id="paint0_linear_501_142" x1="0" y1="0" x2="96.1684" y2="87.6201"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#BF66FF"></stop>
+                            <stop offset="0.510417" stop-color="#6248FF"></stop>
+                            <stop offset="1" stop-color="#00DDEB"></stop>
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_501_142" x1="0" y1="0" x2="96.1684" y2="87.6201"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#BF66FF"></stop>
+                            <stop offset="0.510417" stop-color="#6248FF"></stop>
+                            <stop offset="1" stop-color="#00DDEB"></stop>
+                        </linearGradient>
+                        <linearGradient id="paint2_linear_501_142" x1="0" y1="0" x2="96.1684" y2="87.6201"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#BF66FF"></stop>
+                            <stop offset="0.510417" stop-color="#6248FF"></stop>
+                            <stop offset="1" stop-color="#00DDEB"></stop>
+                        </linearGradient>
+                    </defs>
+                    </svg>
+                </div>
+
+            </div>
+            <div class="boxpremios">
+                <div class="card">
+                    <p class="title1">Monitor</p>
+
+                    <p class="title2">Monitor Gamer GA27</p>
+                    <img src="assets/monitor.png" alt="" style="height: 120px;">
+                    <defs>
+                        <linearGradient id="paint0_linear_501_142" x1="0" y1="0" x2="96.1684" y2="87.6201"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#BF66FF"></stop>
+                            <stop offset="0.510417" stop-color="#6248FF"></stop>
+                            <stop offset="1" stop-color="#00DDEB"></stop>
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_501_142" x1="0" y1="0" x2="96.1684" y2="87.6201"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#BF66FF"></stop>
+                            <stop offset="0.510417" stop-color="#6248FF"></stop>
+                            <stop offset="1" stop-color="#00DDEB"></stop>
+                        </linearGradient>
+                        <linearGradient id="paint2_linear_501_142" x1="0" y1="0" x2="96.1684" y2="87.6201"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#BF66FF"></stop>
+                            <stop offset="0.510417" stop-color="#6248FF"></stop>
+                            <stop offset="1" stop-color="#00DDEB"></stop>
+                        </linearGradient>
+                    </defs>
+                    </svg>
+                </div>
+
+            </div>
+           
+        </div>
+
+        <div class="containerpremios">
+          
+            <div class="boxpremios">
+
+                <div class="card">
+                    <p class="title1">Camiseta</p>
+
+                    <p class="title2">Camiseta Exclusiva Cooler Master</p>
+                    <img src="assets/camiseta.png" alt="">
+                    <defs>
+                        <linearGradient id="paint0_linear_501_142" x1="0" y1="0" x2="96.1684" y2="87.6201"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#BF66FF"></stop>
+                            <stop offset="0.510417" stop-color="#6248FF"></stop>
+                            <stop offset="1" stop-color="#00DDEB"></stop>
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_501_142" x1="0" y1="0" x2="96.1684" y2="87.6201"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#BF66FF"></stop>
+                            <stop offset="0.510417" stop-color="#6248FF"></stop>
+                            <stop offset="1" stop-color="#00DDEB"></stop>
+                        </linearGradient>
+                        <linearGradient id="paint2_linear_501_142" x1="0" y1="0" x2="96.1684" y2="87.6201"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#BF66FF"></stop>
+                            <stop offset="0.510417" stop-color="#6248FF"></stop>
+                            <stop offset="1" stop-color="#00DDEB"></stop>
+                        </linearGradient>
+                    </defs>
+                    </svg>
+                </div>
+            </div>
+            <div class="boxpremios">
+
+                <div class="card">
+                    <p class="title1">Copo Cooler</p>
+
+                    <p class="title2">Copo com tampa Exclusivo Cooler Master</p>
+                    <img src="assets/copo.png" alt="">
+                    <defs>
+                        <linearGradient id="paint0_linear_501_142" x1="0" y1="0" x2="96.1684" y2="87.6201"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#BF66FF"></stop>
+                            <stop offset="0.510417" stop-color="#6248FF"></stop>
+                            <stop offset="1" stop-color="#00DDEB"></stop>
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_501_142" x1="0" y1="0" x2="96.1684" y2="87.6201"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#BF66FF"></stop>
+                            <stop offset="0.510417" stop-color="#6248FF"></stop>
+                            <stop offset="1" stop-color="#00DDEB"></stop>
+                        </linearGradient>
+                        <linearGradient id="paint2_linear_501_142" x1="0" y1="0" x2="96.1684" y2="87.6201"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#BF66FF"></stop>
+                            <stop offset="0.510417" stop-color="#6248FF"></stop>
+                            <stop offset="1" stop-color="#00DDEB"></stop>
+                        </linearGradient>
+                    </defs>
+                    </svg>
+                </div>
+            </div>
+            <div class="boxpremios">
+
+                <div class="card">
+                    <p class="title1">Gabinetes</p>
+
+                    <p class="title2">5 Modelos de cabinetes para Sorteio</p>
+                    <img src="assets/monitores (1).png" alt="">
+                    <defs>
+                        <linearGradient id="paint0_linear_501_142" x1="0" y1="0" x2="96.1684" y2="87.6201"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#BF66FF"></stop>
+                            <stop offset="0.510417" stop-color="#6248FF"></stop>
+                            <stop offset="1" stop-color="#00DDEB"></stop>
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_501_142" x1="0" y1="0" x2="96.1684" y2="87.6201"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#BF66FF"></stop>
+                            <stop offset="0.510417" stop-color="#6248FF"></stop>
+                            <stop offset="1" stop-color="#00DDEB"></stop>
+                        </linearGradient>
+                        <linearGradient id="paint2_linear_501_142" x1="0" y1="0" x2="96.1684" y2="87.6201"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#BF66FF"></stop>
+                            <stop offset="0.510417" stop-color="#6248FF"></stop>
+                            <stop offset="1" stop-color="#00DDEB"></stop>
+                        </linearGradient>
+                    </defs>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="containerpremios">
+            <div class="boxpremios">
+                <div class="card">
+                    <p class="title1">Cordões</p>
+
+                    <p class="title2">Cordões exclusivos Cooler Master</p>
+                    <img src="assets/cordao.png" alt="" style="height: 120px;">
+                    <defs>
+                        <linearGradient id="paint0_linear_501_142" x1="0" y1="0" x2="96.1684" y2="87.6201"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#BF66FF"></stop>
+                            <stop offset="0.510417" stop-color="#6248FF"></stop>
+                            <stop offset="1" stop-color="#00DDEB"></stop>
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_501_142" x1="0" y1="0" x2="96.1684" y2="87.6201"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#BF66FF"></stop>
+                            <stop offset="0.510417" stop-color="#6248FF"></stop>
+                            <stop offset="1" stop-color="#00DDEB"></stop>
+                        </linearGradient>
+                        <linearGradient id="paint2_linear_501_142" x1="0" y1="0" x2="96.1684" y2="87.6201"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#BF66FF"></stop>
+                            <stop offset="0.510417" stop-color="#6248FF"></stop>
+                            <stop offset="1" stop-color="#00DDEB"></stop>
+                        </linearGradient>
+                    </defs>
+                    </svg>
+                </div>
+
+            </div>
+            <div class="boxpremios">
+                <div class="card">
+                    <p class="title1">Bottom</p>
+
+                    <p class="title2">Bottons Exclusivos Cooler Master</p>
+                    <img src="assets/bottom (1).png" alt="">
+                    <defs>
+                        <linearGradient id="paint0_linear_501_142" x1="0" y1="0" x2="96.1684" y2="87.6201"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#BF66FF"></stop>
+                            <stop offset="0.510417" stop-color="#6248FF"></stop>
+                            <stop offset="1" stop-color="#00DDEB"></stop>
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_501_142" x1="0" y1="0" x2="96.1684" y2="87.6201"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#BF66FF"></stop>
+                            <stop offset="0.510417" stop-color="#6248FF"></stop>
+                            <stop offset="1" stop-color="#00DDEB"></stop>
+                        </linearGradient>
+                        <linearGradient id="paint2_linear_501_142" x1="0" y1="0" x2="96.1684" y2="87.6201"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#BF66FF"></stop>
+                            <stop offset="0.510417" stop-color="#6248FF"></stop>
+                            <stop offset="1" stop-color="#00DDEB"></stop>
+                        </linearGradient>
+                    </defs>
+                    </svg>
+                </div>
+
+
+            </div>
+            <div class="boxpremios">
+                <div class="card">
+                    <p class="title1">Mouse MM730</p>
+
+                    <p class="title2">Mouse WHITE MM730</p>
+                    <img src="assets/mouse.png" alt="" style="height: 130px;">
+                    <defs>
+                        <linearGradient id="paint0_linear_501_142" x1="0" y1="0" x2="96.1684" y2="87.6201"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#BF66FF"></stop>
+                            <stop offset="0.510417" stop-color="#6248FF"></stop>
+                            <stop offset="1" stop-color="#00DDEB"></stop>
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_501_142" x1="0" y1="0" x2="96.1684" y2="87.6201"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#BF66FF"></stop>
+                            <stop offset="0.510417" stop-color="#6248FF"></stop>
+                            <stop offset="1" stop-color="#00DDEB"></stop>
+                        </linearGradient>
+                        <linearGradient id="paint2_linear_501_142" x1="0" y1="0" x2="96.1684" y2="87.6201"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#BF66FF"></stop>
+                            <stop offset="0.510417" stop-color="#6248FF"></stop>
+                            <stop offset="1" stop-color="#00DDEB"></stop>
+                        </linearGradient>
+                    </defs>
+                    </svg>
+                </div>
+
+
+            </div>
+        </div>
+      
+
+    </div>
+
+    <div class="colors" id="corabaixo"></div>
+        
+</body>
+
+</html>
